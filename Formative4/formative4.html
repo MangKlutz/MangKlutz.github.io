@@ -3,126 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <script type="text/javascript" src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-
     <title>Employee Registration Form</title>
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="form-container">
-        <h1>Registration Form</h1>
-        <form action="">
-            <div class="row"></div>
-            <div class="form-control">
-                <label for="lastname">Last Name</label>
-                <input type="text" id="lastname" name="lastname" placeholder="Last Name">
-            </div>
-            <div class="form-control">
-                <label for="firstname">First Name</label>
-                <input type="text" id="firstname"  name="firstname" placeholder="First Name">
-            </div>
-            <div class="form-control">
-                <label for="middlename">Middle Name</label>
-                <input type="text" id="middlename"  name="middlename" placeholder="Middle Name">
-            </div>
-            <div class="form-control">
-                <label for="Date of Birth">Date of Birth</label>
-                <input type="text"
-                id="Date of Birth" name="Date of Birth" placeholder = "MM/DD/YYYY">
-            </div>
-            <div class="form-control">
-                <label for="Civil Status">Civil Status</label>
-                <input type="text"
-                id="Date of Birth" name="Civil Status" placeholder = "Civil Status">
-            </div>    
-            <h4>Gender</h4>    
-            <input type="radio" id="Male" name="Male" value="Male">
-                <label for="Male">Male</label><br>
-                <input type="radio" id="Female" name="Female" value="Female">
-                <label for="Female">Female</label><br>
-                <br>
-            <div class="form-control">
-                <label for="Height">Height</label>
-                <input type="text"
-                id="Height" name="Height" placeholder = "Height In Cm">
-            <div class="form-control">
-                <div class="form-row">
-                    <div class="form-control">
-                        <label for="mobilenumber">Mobile Number</label>
-                        <input type="text" id="mobilenumber" name="mobilenumber" placeholder="+63 *** **** ***">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card mt-5">
+                    <div class="card-body">
+                        <h1 class="text-center mb-4">Registration Form</h1>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="lastname">Last Name</label>
+                                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <!-- More personal info fields here -->
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="DateOfBirth">Date of Birth</label>
+                                        <input type="text" class="form-control" id="DateOfBirth" name="DateOfBirth" placeholder="MM/DD/YYYY">
+                                    </div>
+                                    <!-- More personal info fields here -->
+                                    <div class="form-group">
+                                        <label for="CivilStatus">Civil Status</label>
+                                        <select class="form-control" id="CivilStatus" name="CivilStatus">
+                                            <option value="">Select Civil Status</option>
+                                            <option value="Single">Single</option>
+                                            <option value="Married">Married</option>
+                                            <option value="Divorced">Divorced</option>
+                                            <option value="Widowed">Widowed</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Gender</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                                            <label class="form-check-label" for="male">Male</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                                            <label class="form-check-label" for="female">Female</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- More personal info fields here -->
+                                    <div class="form-group">
+                                        <label for="Height">Height</label>
+                                        <input type="text" class="form-control" id="Height" name="Height" placeholder="Height In Cm">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mobilenumber">Mobile Number</label>
+                                        <input type="text" class="form-control" id="mobilenumber" name="mobilenumber" placeholder="+63 *** **** ***">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="text" class="form-control" id="email" name="email" placeholder="Email Address">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <!-- Family background fields here -->
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- Education fields here -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary">Register</button>
+                                    <button type="button" class="btn btn-secondary">Cancel</button> 
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="form-control">
-                        <label for="email">Email Address</label>
-                        <input type="text" id="email" name="email" placeholder="Email Address">
-                    </div>
-                </div>                
-                <input type="text" id="email" name="email" placeholder="Email Address">
+                </div>
             </div>
-            <h3>Family Background</h3>
-            </div>
-            <div class="form-control">
-                <label for="Mother's Name">Mother's Name</label>
-                <input type="text" id="Mother's Name" name ="Mother's Name" placeholder="Mother's Name">
-            </div>
-            <div class="form-control">
-                <label for="Mother's Maiden Name">Mother's Maiden Name</label>
-                <input type="text" id="Mother's Name" name ="Mother's Name" placeholder="Mother's Maiden Name">
-            </div>
-            <div class="form-control">
-                <label for="Father's Name">Father's Name</label>
-                <input type="text" id="Father's Name" name ="Father's Name" placeholder="Father's Name">
-            </div>
-            <h4>Siblings</h4>
-            <input type="radio" id="Yes" name="Yes" value="Yes">
-            <label for="Yes">Yes</label><br>
-            <input type="radio" id="No" name="No" value="No">
-            <label for="No">No</label><br>
-            <br>
-            <div class="form-control">
-            <label for="siblings">Number of Siblings:</label>
-                <select name="Number of Siblings" id="Siblings">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4+">4+</option>
-                </select>
-            <h3>Educational Background</h3>
-            <label for="Year">Educational Attainment:</label>
-                <select name="Educational Attainment" id="Year">
-                <option value="-------">-------</option>
-                <option value="High School">High School</option>
-                <option value="Senior High School">Senior High School</option>
-                <option value="College">College</option>
-                <option value="College Graduate">College Graduate</option>
-                <option value="Others">Others</option>
-                </select>
-                <h3>For Students</h3>
-            <div class="form-control">
-                <label for="School"></label>
-                <input type="text" id="School" name ="School" placeholder="Name of School">
-            </div>
-            <div class="form-control">
-                <label for="Year Level"></label>
-                <input type="text" id="Year Level" name ="Year Level" placeholder="Year Level">
-            </div>
-            <div class="form-control">
-                <label for="Strand or Course"></label>
-                <input type="text" id="Strand or Course" name ="Strand or Course" placeholder="Strand or Course">
-            </div>
-            <h3>For Graduates</h3>
-            <label for="Job"></label>
-                <input type="text" id="Job" name ="Job" placeholder="Current Job">
-            </div>
-            <label for="Exp"></label>
-                <input type="text" id="Exp" name ="Exp" placeholder="Years of Experience">
-                <br><br>
-            <div class="buttons">
-                <button type="submit">Register</button>
-                <button type="button">Cancel</button> 
-            </div>
-            </div>
-        </form>
+        </div>
     </div>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
