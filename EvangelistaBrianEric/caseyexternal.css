@@ -1,0 +1,25 @@
+body {
+    line-height: 1.6;
+    background-color: rgb(182, 202, 147);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.content-wrapper {
+    background-color: #fff;
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 2px solid #333;
+    max-width: 900px;
+    width: 100%;
+}
+h1 {
+    font-family: Verdana, sans-serif;
+    padding: 20px;
+    background-color: olivedrab;
+}
