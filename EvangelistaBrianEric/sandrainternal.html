@@ -19,32 +19,34 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: left;
+            text-align: center;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
         }
         .sandra h1 {
             font-size: 36px;
             margin-bottom: 10px;
-            color: #ffffff;
+            color: #000000;
             width: 100%;
         }
         .sandra p {
             font-size: 18px;
-            color: #ffffff;
+            color: #000000;
             width: 100%;
         }
         .sandra ul {
             list-style-type: none;
             padding-left: 0;
-            width: 45%;
-            margin-bottom: 0;
+            width: 80%;
+            margin-bottom: 20px;
         }
         .sandra ul li {
-            font-size: 16px;
-            margin-bottom: 5px;
-            color: #ffffff;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #000000;
+            padding-left: 20px;
+            width: 80%;
         }
         .sandra img {
             max-width: 100%;
@@ -52,6 +54,36 @@
             border-radius: 5px;
             margin-top: 20px;
             width: 45%;
+        }
+        .sandra1 {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .sandra1 h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+        .sandra1 img {
+            max-width: 48%;
+            height: auto;
+            border-radius: 5px;
+            margin: 1%;
+        }
+        .go-back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #556B2F;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .go-back-btn:hover {
+            background-color: #6B8E23;
         }
     </style>
 </head>
@@ -61,7 +93,7 @@
         <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t39.30808-6/448025378_3847633248895207_4847626078200221658_n.jpg?stp=c0.70.640.640a_dst-jpg_p640x640&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHvkYJnTYtcrbRvTxEa8V24MpqtyjGck38ymq3KMZyTf39sG2IHIiAp2dS0QBaMu4VCendmKinFNDhAgCmn7Uoh&_nc_ohc=p0Viq4gaGbYQ7kNvgG25BVN&_nc_ht=scontent.fmnl30-1.fna&oh=00_AYAi4IXiqlVyedqIRGUPb9SN6pWY1Imi4eWv7S2D-yax6w&oe=6671E0BC" alt="Kristina Casandra Montas">
         <p>Age: 19 years old</p>
         <p>Location: Batangas</p>
-        <p>We became friends because of a friend and we help each other out especially when it's academically related. I think she became one of my best of friends since we relate with the idea of relationship and we're more open to each other than our friend group.</p>
+        <p>A friend of a friend and we soon became best of friends, we help each other out especially when it's academically related. I think she became one of my best of friends since we relate with the idea of relationship and we're more open to each other than our friend group.</p>
         <div>
             <h2>Interests</h2>
             <ul>
@@ -79,6 +111,12 @@
                 <li>CSS</li>
             </ul>
         </div>
+        <div class="sandra1">
+            <h1>Random Pictures</h1>
+            <img src="sandra1.jpg" alt="KC Montas">
+            <img src="sandra2.jpg" alt="KC Montas">
+        </div>
+        <button class="go-back-btn" onclick="history.back()">Go Back</button>
     </div>
 </body>
 </html>
