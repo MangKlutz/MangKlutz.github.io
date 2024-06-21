@@ -6,7 +6,15 @@
   <title>Responsive Product/Service Web Page</title>
   
   <link rel="stylesheet" href="website.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    .navbar-text {
+      color: #fff;
+    }
+
+  </style>
 </head>
 <body>
 
@@ -29,17 +37,25 @@
             <a class="dropdown-item" href="#">Products</a>
             <a class="dropdown-item" href="#">Subscription Details</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Logout</a>
+            <a class="dropdown-item" href="#">Sign in</a>
           </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-right">
+        <li class="nav-item">
+          <a class="nav-link cart-icon" href="#">
+            <span class="cart-badge">3</span>
+            <i class="fas fa-shopping-cart"></i>
+          </a>
         </li>
       </ul>
     </div>
   </nav>
 
   <main role="main" class="container">
-    <div class="jumbotron">
+    <div class="header-custom">
       <h1 class="display-4">Crypto Mining Hosting</h1>
-      <p class="lead">Mine cryptocurrency from your homes!</p>
+      <p class="lead">Mining made easier! <br> Philippines Based</p>
       <hr class="my-4">
       <p>For as low as ₱500 monthly!</p>
       <a class="btn btn-primary btn-lg" href="https://mangklutz.github.io/Formative6/registration" role="button">Sign Up</a>
@@ -47,18 +63,18 @@
 
     <div class="row">
       <div class="col-md-4">
-        <h2>Basic Membership</h2>
-        <img src="pictures/1.jpg" alt="Basic Membership" class="img-fluid membership-img">
+        <h2>Basic</h2>
+        <img id="basic-img" src="pictures/1.jpg" alt="Basic Membership" class="img-fluid membership-img">
         <p>Less than 1000 Terahash</p>
       </div>
       <div class="col-md-4">
-        <h2>Premium Membership</h2>
-        <img src="pictures/2.jpg" alt="Premium Membership" class="img-fluid membership-img">
+        <h2>Premium</h2>
+        <img id="premium-img" src="pictures/2.jpg" alt="Premium Membership" class="img-fluid membership-img">
         <p>Less than 5000 Terahash</p>
       </div>
       <div class="col-md-4">
-        <h2>VIP Status</h2>
-        <img src="pictures/3.jpeg" alt="VIP Status" class="img-fluid membership-img">
+        <h2>VIP</h2>
+        <img id="vip-img" src="pictures/3.jpeg" alt="VIP Status" class="img-fluid membership-img">
         <p>More than 5000 Terahash</p>
       </div>
     </div>
@@ -79,7 +95,7 @@
             <li><a href="https://www.facebook.com/brian.e.evangelista">Facebook</a></li>
             <li><a href="https://x.com/chimkenbriyani">Twitter</a></li>
             <li><a href="https://www.instagram.com/soberbriii/">Instagram</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="https://mangklutz.github.io/EvangelistaBrianEric/homepage">About Us</a></li>
             <li><a href="#">Terms of Service</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>
@@ -88,9 +104,28 @@
     </div>
   </footer>
 
+  <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="welcomeModalLabel">Welcome to Minero PH</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Welcome to Minero PH! Sign up today to start mining cryptocurrency from the comfort of your home! Mining is now accessible for Filipinos!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a href="https://mangklutz.github.io/Formative6/registration" class="btn btn-primary">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 </html>
