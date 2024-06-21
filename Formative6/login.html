@@ -37,9 +37,15 @@
             var form = document.getElementById("loginForm");
             var email = form.elements["email"].value;
             var password = form.elements["password"].value;
-
-            window.location.href = "https://mangklutz.github.io/Formative6/registration";
+    
+            if (email === "" || password === "") {
+                alert("Please fill in both email and password.");
+                return;
+            }
+     
+            window.location.href = "https://mangklutz.github.io/SA3/website";
         }
     </script>
+    
 </body>
 </html>
