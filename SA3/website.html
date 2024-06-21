@@ -7,14 +7,7 @@
   
   <link rel="stylesheet" href="website.css">
   <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-  <style>
-    .navbar-text {
-      color: #fff;
-    }
-
-  </style>
 </head>
 <body>
 
@@ -23,13 +16,13 @@
       <img src="pictures/htmlmining.png" alt="Minero PH Logo">
       <span class="navbar-text">Minero PH</span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Menu
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -41,10 +34,10 @@
           </div>
         </li>
       </ul>
-      <ul class="navbar-nav ml-right">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link cart-icon" href="#">
-            <span class="cart-badge">3</span>
+            <span class="cart-badge">0</span>
             <i class="fas fa-shopping-cart"></i>
           </a>
         </li>
@@ -57,7 +50,7 @@
       <h1 class="display-4">Crypto Mining Hosting</h1>
       <p class="lead">Mining made easier! <br> Philippines Based</p>
       <hr class="my-4">
-      <p>For as low as ₱500 monthly!</p>
+      <p>For as low as ₱999 monthly!</p>
       <a class="btn btn-primary btn-lg" href="https://mangklutz.github.io/Formative6/registration" role="button">Sign Up</a>
     </div>
 
@@ -65,7 +58,9 @@
       <div class="col-md-4">
         <h2>Basic</h2>
         <img id="basic-img" src="pictures/1.jpg" alt="Basic Membership" class="img-fluid membership-img">
-        <p>Less than 1000 Terahash</p>
+        <p>Less than 1000 Terahash
+          <br> 
+        </p>
       </div>
       <div class="col-md-4">
         <h2>Premium</h2>
@@ -109,23 +104,21 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="welcomeModalLabel">Welcome to Minero PH</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           Welcome to Minero PH! Sign up today to start mining cryptocurrency from the comfort of your home! Mining is now accessible for Filipinos!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <a href="https://mangklutz.github.io/Formative6/registration" class="btn btn-primary">Sign Up</a>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
