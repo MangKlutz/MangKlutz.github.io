@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
     myModal.show();
-    
+
     let basicClicked = false;
     let premiumClicked = false;
     let vipClicked = false;
@@ -29,5 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("You must be signed in to access this feature.");
       }
     }
+
   });
   
