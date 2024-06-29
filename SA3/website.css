@@ -134,3 +134,13 @@ body {
   margin-bottom: 2rem;
   border-radius: .3rem;
 }
+
+.parag {
+  font-size: large;
+  flex: 0 0 30%;
+  margin: 10px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

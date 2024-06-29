@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Use vanilla JavaScript or use jQuery with noConflict mode if necessary
     var myModal = new bootstrap.Modal(document.getElementById('welcomeModal'), {
       keyboard: false
     });
     
     myModal.show();
-    
+
     let basicClicked = false;
     let premiumClicked = false;
     let vipClicked = false;
@@ -24,11 +23,12 @@ document.addEventListener("DOMContentLoaded", function() {
       vipClicked = true;
       checkIfAllClicked();
     });
-    
+
     function checkIfAllClicked() {
       if (basicClicked && premiumClicked && vipClicked) {
         alert("You must be signed in to access this feature.");
       }
     }
+
   });
   
