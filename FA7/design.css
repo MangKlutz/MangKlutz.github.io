@@ -1,0 +1,68 @@
+body {
+    background: url('pictures/feu.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.logo-section {
+    margin-bottom: 20px;
+}
+
+.logo-section img {
+    max-width: 80px;
+}
+
+.browse-courses {
+    margin-bottom: 20px;
+}
+
+.browse-link {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.login-container .form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.login-container .btn {
+    width: 100%;
+}
+
+.text-danger {
+    color: red !important;
+}
+
+#error-message {
+    display: none;
+}
+
+#username-error,
+#password-error {
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+    }
+}
