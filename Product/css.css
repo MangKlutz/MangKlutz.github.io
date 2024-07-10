@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.banner {
+    background-color: #ffcc00;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.nav-tabs a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.nav-tabs a:hover {
+    background-color: #575757;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-box {
+    background-color: #DAEBE9;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.product-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-box h2 {
+    margin-top: 10px;
+}
+
+.product-box button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-box button:hover {
+    background-color: #e6b800;
+}
+
+.large-product-box {
+    background-color: #DAEBE9;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+.large-product-box h2 {
+    margin-top: 0;
+}
+
+.large-product-box .product-box {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.cta a {
+    background-color: #ffcc00;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+.cta a:hover {
+    background-color: #e6b800;
+}
+
+.cart {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart li {
+    margin-bottom: 10px;
+}

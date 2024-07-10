@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon GO Online Store - Exclusive Item Boxes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="banner">
+        <p>Enjoy an Exclusive 15% Discount on Your Next Star Wars Purchase of $75 or More!</p>
+    </div>
+    <div class="nav-tabs">
+        <a href="#">Web Store</a>
+        <a href="#">Policies</a>
+        <a href="#">Daily Bundles</a>
+        <a href="#">Offer Redemption</a>
+    </div>
+    <div class="container">
+        <div class="product-box" id="product1">
+            <img src="path/to/image1.jpg" alt="One Time Only Box">
+            <h2>One Time Only Box (Limited Time Only)</h2>
+            <p><strong>Price:</strong> 480 PokéCoins</p>
+            <p><strong>Description:</strong> Get your hands on this exclusive One Time Only Box! Packed with essential items to enhance your Pokémon GO adventure.</p>
+            <button onclick="addToCart('One Time Only Box', 480)">Add to Cart</button>
+        </div>
+        <div class="product-box" id="product2">
+            <img src="path/to/image2.jpg" alt="Inbound from Ultra Space">
+            <h2>Inbound from Ultra Space Premium Research (Global Ticket) (Featured)</h2>
+            <p><strong>Price:</strong> 1480 PokéCoins</p>
+            <p><strong>Description:</strong> Dive into premium research with the Inbound from Ultra Space box. This global ticket gives you access to unique challenges and rewards.</p>
+            <button onclick="addToCart('Inbound from Ultra Space', 1480)">Add to Cart</button>
+        </div>
+        <div class="product-box" id="product3">
+            <img src="path/to/image3.jpg" alt="Ultra Raid Box">
+            <h2>Ultra Raid Box (Limited Time Only)</h2>
+            <p><strong>Price:</strong> 1480 PokéCoins</p>
+            <p><strong>Description:</strong> Prepare for battle with the Ultra Raid Box! Stock up on raid passes and more to take on powerful raid bosses across the world.</p>
+            <button onclick="addToCart('Ultra Raid Box', 1480)">Add to Cart</button>
+        </div>
+        <div class="product-box" id="product4">
+            <img src="path/to/image4.jpg" alt="Special Research Box">
+            <h2>Special Research Box</h2>
+            <p><strong>Price:</strong> 980 PokéCoins</p>
+            <p><strong>Description:</strong> Unlock special research tasks and rewards with this exclusive box.</p>
+            <button onclick="addToCart('Special Research Box', 980)">Add to Cart</button>
+        </div>
+        <div class="product-box" id="product5">
+            <img src="path/to/image5.jpg" alt="Adventure Box">
+            <h2>Adventure Box</h2>
+            <p><strong>Price:</strong> 1280 PokéCoins</p>
+            <p><strong>Description:</strong> Embark on new adventures with the Adventure Box, filled with items to help you on your journey.</p>
+            <button onclick="addToCart('Adventure Box', 1280)">Add to Cart</button>
+        </div>
+        <div class="large-product-box">
+            <h2>Mystery Boxes Specials</h2>
+            <div class="product-box">
+                <img src="path/to/image6.jpg" alt="Special Offer 1">
+                <h3>Mystery Boxes</h3>
+                <p><strong>Price:</strong> 500 PokéCoins</p>
+                <p><strong>Description:</strong> Take advantage of this special offer to get exclusive items at a great price.</p>
+                <button onclick="addToCart('Special Offer 1', 500)">Add to Cart</button>
+            </div>
+            <div class="product-box">
+                <img src="path/to/image7.jpg" alt="Special Offer 2">
+                <h3>Mystery Box 2</h3>
+                <p><strong>Price:</strong> 750 PokéCoins</p>
+                <p><strong>Description:</strong> Don't miss out on this limited-time offer for premium items.</p>
+                <button onclick="addToCart('Special Offer 2', 750)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="cta">
+            <a href="#">Sign in now to add these exclusive item boxes to your collection!</a>
+        </div>
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cartItems"></ul>
+            <p><strong>Total:</strong> <span id="totalPrice">0</span> PokéCoins</p>
+        </div>
+    </div>
+</body>
+</html>
