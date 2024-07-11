@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card p-4" style="max-width: 400px; width: 100%;">
+            <div class="text-center mb-4">
+                <img src="pokemon-logo.png" alt="Pokemon" id="poke" class="img-fluid">
+            </div>
+            <h4 class="text-center mb-3">Enter your country or region and your birthdate</h4>
+            <p class="text-center mb-4">Please enter the needed information. Everything should be filled out.</p>
+            <form id="registrationForm">
+                <div class="mb-3">
+                    <label for="countryRegion" class="form-label">Country/Region</label>
+                    <select class="form-select" id="countryRegion" required>
+                        <option value="" disabled selected>---</option>
+                        <option value="ph">Philippines</option>
+                        <option value="jp">Japan</option>
+                        <option value="feu">FEU</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="birthdate" class="form-label">Birthdate</label>
+                    <div class="d-flex justify-content-between">
+                        <select class="form-select me-1" id="year" required>
+                            <option value="" disabled selected>Year</option>
+                            <script>
+                                for (let i = new Date().getFullYear(); i >= 1900; i--) {
+                                    document.write('<option value="' + i + '">' + i + '</option>');
+                                }
+                            </script>
+                        </select>
+                        <select class="form-select me-1" id="month" required>
+                            <option value="" disabled selected>Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <select class="form-select" id="day" required>
+                            <option value="" disabled selected>Day</option>
+                            <script>
+                                for (let i = 1; i <= 31; i++) {
+                                    document.write('<option value="' + i + '">' + i + '</option>');
+                                }
+                            </script>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" pattern="(?=.*[\W_]).{8,}" required>
+                    <small>Password must be at least 8 characters long and contain at least one special character.</small>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Continue</button>
+                <hr> 
+            </form>
+            <div id="separating-line" class="text-center">
+                <p>Or sign up with</p>
+                <div class="signup-options">
+                    <div class="signup-option">
+                        <img src="images/google.png" alt="Gmail" class="img-fluid">
+                    </div>
+                    <div class="signup-option">
+                        <img src="images/facebook.png" alt="Facebook" class="img-fluid">
+                    </div>
+                    <div class="signup-option">
+                        <img src="images/nintendo.png" alt="Nintendo" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="text-center mt-4">
+                <small>&copy;2024 Pokémon.<br>©1995 – 2024 Nintendo/Creatures Inc./GAME FREAK inc. TM, ®Nintendo.<br>This webpage is only used for educational purposes and credit is given to the companies mentioned.<br> <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a></small>
+            </footer>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exitModal" tabindex="-1" aria-labelledby="exitModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exitModalLabel">Confirm Exit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to leave the page? Unsaved changes will be lost.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-primary" id="confirmExit">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="registration.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
