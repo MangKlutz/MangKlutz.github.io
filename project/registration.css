@@ -1,0 +1,72 @@
+body {
+    background-color: #1a1a1a; /* Dark background color */
+    background-image: url('images/background-image.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color:whitesmoke;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffe5cf;
+    padding: 20px; 
+}
+
+img {
+    max-height: 60px;
+}
+
+.modal-content {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+.modal-header, .modal-footer {
+    border-color: #444444;
+}
+
+.btn-primary {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+#separating-line hr {
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+.signup-options {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff; 
+    padding: 15px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top: 10px; 
+}
+
+.signup-option {
+    transition: transform 0.3s ease;
+    padding: 10px; 
+    background-color: #fff; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.signup-option:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.signup-option img {
+    max-height: 40px; 
+    display: block; 
+    margin: 0 auto; 
+}
