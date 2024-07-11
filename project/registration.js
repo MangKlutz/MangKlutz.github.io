@@ -9,7 +9,6 @@ document.getElementById('registrationForm').addEventListener('submit', function 
         alert('Please fill out all fields.');
     } else {
         alert('Form submitted successfully!');
-        // Add your form submission logic here
     }
 });
 

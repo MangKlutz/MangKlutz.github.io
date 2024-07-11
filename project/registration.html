@@ -8,13 +8,25 @@
     <link rel="stylesheet" href="registration.css">
 </head>
 <body>
+    <img src="images/background-image.png" alt="Background Image" id="background-img">
+</body>
+
+    <header class="d-flex justify-content-between align-items-center p-3">
+    <a href="index.html">
+        <img src="images/pkglogo.png" alt="Pokemon Go Logo" id="logo" class="logo img-fluid">
+    </a>
+    <a href="login.html" class="text-white" style="color: black !important; font-size: 14px !important;">Already have an account?</a>
+    </header>
+
+
+
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="card p-4" style="max-width: 400px; width: 100%;">
             <div class="text-center mb-4">
-                <img src="pokemon-logo.png" alt="Pokemon" id="poke" class="img-fluid">
+                <img src="images/snorlax1.png" alt="Pokemon" id="poke" class="img-fluid">
             </div>
-            <h4 class="text-center mb-3">Enter your country or region and your birthdate</h4>
-            <p class="text-center mb-4">Please enter the needed information. Everything should be filled out.</p>
+            <h4 class="text-center mb-3">Start your journey now by creating your account!</h4>
+            <h5 class="text-center mb-4">Before starting you should become a trainer first!</h5>
             <form id="registrationForm">
                 <div class="mb-3">
                     <label for="countryRegion" class="form-label">Country/Region</label>
@@ -71,7 +83,7 @@
                     <small>Password must be at least 8 characters long and contain at least one special character.</small>
                 </div>
                 <button type="submit" class="btn btn-primary w-100">Continue</button>
-                <hr> 
+                <hr>
             </form>
             <div id="separating-line" class="text-center">
                 <p>Or sign up with</p>
@@ -87,12 +99,18 @@
                     </div>
                 </div>
             </div>
-            
             <footer class="text-center mt-4">
                 <small>&copy;2024 Pokémon.<br>©1995 – 2024 Nintendo/Creatures Inc./GAME FREAK inc. TM, ®Nintendo.<br>This webpage is only used for educational purposes and credit is given to the companies mentioned.<br> <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a></small>
             </footer>
         </div>
     </div>
+
+    <footer class="text-center p-3 footer-dark">
+        <div class="d-flex justify-content-center align-items-center">
+            <img src="images/nintendo.png" alt="Nintendo" class="footer-logo mx-3">
+            <img src="images/niantic.png" alt="Niantic" class="footer-logo mx-3">
+        </div>
+    </footer>
 
     <div class="modal fade" id="exitModal" tabindex="-1" aria-labelledby="exitModalLabel" aria-hidden="true">
         <div class="modal-dialog">
