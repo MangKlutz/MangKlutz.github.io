@@ -13,7 +13,7 @@ function updateCart() {
     cartItems.innerHTML = '';
     cart.forEach(item => {
         const li = document.createElement('li');
-        li.textContent = ${item.name} - ${item.price} PokéCoins;
+        li.textContent = `${item.name} - ${item.price} PokéCoins`;
         cartItems.appendChild(li);
     });
     totalPriceElement.textContent = totalPrice;
