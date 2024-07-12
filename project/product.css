@@ -21,7 +21,7 @@ a {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center align items horizontally */
+    justify-content: center; 
 }
 
 /* Banner */
@@ -33,11 +33,11 @@ a {
     margin-bottom: 0px;
 }
 .logo img {
-    max-width: 100px; /* Adjust size as needed */
+    max-width: 100px; 
     height: auto;
-    margin-right: 20px; /* Adjust spacing */
+    margin-right: 20px; 
 }
-/* Navigation Tabs */
+
 .nav-tabs {
     background-color: #333;
     text-align: center;
@@ -236,22 +236,22 @@ a {
 }
 #footer
     {
-        padding: 10px;
-        position:relative;
-        color:#080808;
-        width:100%;
-        height:150px;
-        clear:both;
-        background:linear-gradient(#2f2f2f ,#000);
-        background:-moz-linear-gradient(#2f2f2f ,#000);
-        background:turquoise;
-        -webkit-box-shadow:0px 0px 20px 0px black;
-        -moz-box-shadow:0px 0px 20px 0px black;
-        box-shadow:0px 0px 20px 0px black;
-        border-top:1px solid black;
+    padding: 10px;
+    position:relative;
+    color:#080808;
+    width:100%;
+    height:150px;
+    clear:both;
+    background:linear-gradient(#2f2f2f ,#000);
+    background:-moz-linear-gradient(#2f2f2f ,#000);
+    background:turquoise;
+    -webkit-box-shadow:0px 0px 20px 0px black;
+    -moz-box-shadow:0px 0px 20px 0px black;
+    box-shadow:0px 0px 20px 0px black;
+    border-top:1px solid black;
     }
 
-    #footer-faqs {
+#footer-faqs {
     padding: 10px;
     position: absolute; 
     bottom: 0; 
@@ -271,36 +271,36 @@ a {
 
 .foot
     {
-        font-size:20px;
-        position:relative;
-        margin-top:0px;
-        margin-left:80px;
-        float:left;
+    font-size:20px;
+    position:relative;
+    margin-top:0px;
+    margin-left:80px;
+    float:left;
     }
 
 #foot 
     {
-        position:relative;
-        float:left;
-        margin-left:21%;
+    position:relative;
+    float:left;
+    margin-left:21%;
     }
 
 #foot ul a li
     {
-        text-decoration:none;
-        display:block;
-        color:#000;
-        width: 500px;
-        margin-top: 10px;
+    text-decoration:none;
+    display:block;
+    color:#000;
+    width: 500px;
+    margin-top: 10px;
     }
 
 #foot ul a li:hover
     {
-        -webkit-box-shadow:2px 2px 2px black;
-        -moz-box-shadow:2px 2px 2px black;
-        box-shadow:2px 2px 2px black;
-        -webkit-border-radius:5px;
-        -moz-border-radius:5px;
-        border-radius:5px;
-        position:relative;
+    -webkit-box-shadow:2px 2px 2px black;
+    -moz-box-shadow:2px 2px 2px black;
+    box-shadow:2px 2px 2px black;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    position:relative;
     }
