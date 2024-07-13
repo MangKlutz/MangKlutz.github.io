@@ -1,69 +1,150 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-  }
-  
-  html {
-    box-sizing: border-box;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  .column {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
-  }
-  
-  .about-section {
-    padding: 50px;
-    text-align: center;
-    background-color: #474e5d;
-    color: white;
-  }
-  
-  .container {
-    padding: 0 16px;
-  }
-  
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  .button:hover {
-    background-color: #555;
-  }
-  
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.navbar {
+  background-color: #f8eb99e1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar-brand {
+  color: #a52426; 
+  font-weight: bold;
+  font-size: 1.5rem; 
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+  color: #ad5052; 
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107; 
+}
+
+h1 {
+  color: #3b4cca;
+}
+
+.description {
+  font-size: 18px;
+  color: #333;
+}
+
+.company-card {
+  background-color: #b17751e7;  
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.company-card p {
+  color: #333;  
+  margin-right: 90px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.company-card .company-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company-card .nintendo-img {
+  max-height: 70px;  
+  margin-bottom: 15px;
+}
+
+.company-card .niantic-img {
+  max-height: 100px;  
+}
+
+.team-images {
+  background-color: #d94d30;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.member {
+  background-color: #f8c818e7;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;  
+  max-width: 400px;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.member img {
+  border-radius: 10px;  
+  width: 200px;  
+  height: 200px;  
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.member h2 {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.member h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.member p {
+  color: #3f3e3e;
+  font-size: 14px;
+  margin: 0;  
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer img {
+  height: 40px; 
+  margin-right: 10px; 
+}
